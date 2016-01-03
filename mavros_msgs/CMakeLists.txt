@@ -32,6 +32,17 @@ add_message_files(
   Vibration.msg
   Waypoint.msg
   WaypointList.msg
+# MODIFICA
+  B_matrix.msg
+  Bb_tb_i_matrix.msg
+  Bb_tb_i_pinv_matrix.msg
+  T_bw_matrix.msg
+  g_matrix.msg
+  csi_matrix.msg
+  csi_dot_matrix.msg
+  csi_r_matrix.msg
+  csi_dot_r_matrix.msg
+# FINE MODIFICA
 )
 
 add_service_files(
