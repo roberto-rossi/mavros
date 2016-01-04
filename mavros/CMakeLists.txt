@@ -112,6 +112,15 @@ add_library(mavros_plugins
   src/plugins/actuator_control.cpp
   src/plugins/manual_control.cpp
   src/plugins/altitude.cpp
+##MODIFICA
+  src/plugins/B_matrix.cpp
+  src/plugins/Bb_tb_i_matrix.cpp
+  src/plugins/Bb_tb_i_pinv_matrix.cpp
+  src/plugins/T_bw_matrix.cpp
+  src/plugins/g_matrix.cpp
+  src/plugins/csi_r.cpp
+  src/plugins/csi_dot_r.cpp
+##FINE MODIFICA
 )
 add_dependencies(mavros_plugins
   mavros

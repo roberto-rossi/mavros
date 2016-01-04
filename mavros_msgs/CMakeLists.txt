@@ -38,10 +38,12 @@ add_message_files(
   Bb_tb_i_pinv_matrix.msg
   T_bw_matrix.msg
   g_matrix.msg
-  csi_matrix.msg
-  csi_dot_matrix.msg
-  csi_r_matrix.msg
-  csi_dot_r_matrix.msg
+  csi.msg
+  csi_dot.msg
+  csi_r.msg
+  csi_dot_r.msg
+  csi.msg
+  csi_dot.msg
 # FINE MODIFICA
 )
 
