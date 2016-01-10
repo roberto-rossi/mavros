@@ -120,6 +120,8 @@ add_library(mavros_plugins
   src/plugins/g_matrix.cpp
   src/plugins/csi_r.cpp
   src/plugins/csi_dot_r.cpp
+  src/plugins/csi.cpp
+  src/plugins/csi_dot.cpp
 ##FINE MODIFICA
 )
 add_dependencies(mavros_plugins
