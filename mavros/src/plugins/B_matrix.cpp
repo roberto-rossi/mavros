@@ -47,13 +47,19 @@ private:
     void B_override(const boost::array<float_t, 100> &value) {
 		mavlink_message_t msg;
         float value1 [50];
-        std::copy(&value[0],&value[50],value1);
+        for(int j = 0; j < 50; j++) {
+                    value1[j]=value[j];
+                }
+        std::copy(&value[0],&value[49],value1);
         mavlink_msg_b1_matrix_pack_chan(UAS_PACK_CHAN(uas), &msg, 0,
 				value1
 				);
 		UAS_FCU(uas)->send_message(&msg);
 		
-        std::copy(&value[50],&value[100],value1);
+        std::copy(&value[49],&value[99],value1);
+        for(int j = 50; j < 100; j++) {
+                    value1[j-50]=value[j];
+                }
         mavlink_msg_b2_matrix_pack_chan(UAS_PACK_CHAN(uas), &msg, 0,
 				value1
 				);

@@ -42,7 +42,7 @@ private:
     void csi_r_override(const boost::array<float_t, 11> &value) {
         mavlink_message_t msg;
         float value1 [11];
-        std::copy(&value[0],&value[11],value1);
+        std::copy(value.begin(),value.end(),value1);
         mavlink_msg_csi_r_matrix_pack_chan(UAS_PACK_CHAN(uas), &msg, 0, value1);
 		UAS_FCU(uas)->send_message(&msg);
 	}

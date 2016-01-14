@@ -87,11 +87,11 @@
         <class name="csi_dot_r" type="mavplugin::csi_dot_rPlugin" base_class_type="mavplugin::MavRosPlugin">
                 <description>Publish csi_dot_r</description>
         </class>
-        <class name="csi" type="mavplugin::csi_rPlugin" base_class_type="mavplugin::MavRosPlugin">
-                <description>Publish csi_r</description>
+        <class name="csi" type="mavplugin::csiPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish csi</description>
         </class>
-        <class name="csi_dot" type="mavplugin::csi_dot_rPlugin" base_class_type="mavplugin::MavRosPlugin">
-                <description>Publish csi_dot_r</description>
+        <class name="csi_dot" type="mavplugin::csi_dotPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish csi_dot</description>
         </class>
 </library>
 
