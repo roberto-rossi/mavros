@@ -122,6 +122,7 @@ add_library(mavros_plugins
   src/plugins/csi_dot_r.cpp
   src/plugins/csi.cpp
   src/plugins/csi_dot.cpp
+  src/plugins/polimi_attitude_ned.cpp
 ##FINE MODIFICA
 )
 add_dependencies(mavros_plugins

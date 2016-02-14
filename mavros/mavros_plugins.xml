@@ -93,5 +93,8 @@
         <class name="csi_dot" type="mavplugin::csi_dotPlugin" base_class_type="mavplugin::MavRosPlugin">
                 <description>Publish csi_dot</description>
         </class>
+        <class name="polimi_attitude_ned" type="mavplugin::polimi_attitude_nedPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish polimi_attitude_ned</description>
+        </class>
 </library>
 

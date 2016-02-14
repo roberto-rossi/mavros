@@ -42,8 +42,7 @@ add_message_files(
   csi_dot.msg
   csi_r.msg
   csi_dot_r.msg
-  csi.msg
-  csi_dot.msg
+  polimi_attitude_ned.msg
 # FINE MODIFICA
 )
 
