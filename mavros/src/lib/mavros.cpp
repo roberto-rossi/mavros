@@ -4,7 +4,7 @@
  * @author Vladimir Ermakov <vooon341@gmail.com>
  */
 /*
- * Copyright 2013,2014,2015 Vladimir Ermakov.
+ * Copyright 2013,2014,2015,2016 Vladimir Ermakov.
  *
  * This file is part of the mavros package and subject to the license terms
  * in the top-level LICENSE file of the mavros repository.
@@ -15,6 +15,7 @@
 #include <ros/console.h>
 #include <mavros/utils.h>
 #include <fnmatch.h>
+#include <mavlink/config.h>
 
 using namespace mavros;
 using namespace mavconn;
@@ -125,8 +126,9 @@ MavRos::MavRos() :
 #define STR(x)	STR2(x)
 
 	ROS_INFO("Built-in SIMD instructions: %s", Eigen::SimdInstructionSetsInUse());
+	ROS_INFO("Built-in MAVLink package version: %s", MAVLINK_VERSION);
 	ROS_INFO("Built-in MAVLink dialect: %s", STR(MAVLINK_DIALECT));
-	ROS_INFO("MAVROS started. MY ID [%d, %d], TARGET ID [%d, %d]",
+	ROS_INFO("MAVROS started. MY ID %d.%d, TARGET ID %d.%d",
 		system_id, component_id,
 		tgt_system_id, tgt_component_id);
 }
@@ -256,9 +258,11 @@ void MavRos::startup_px4_usb_quirk(void) {
 }
 
 void MavRos::log_connect_change(bool connected) {
+	auto ap = mav_uas.str_autopilot(mav_uas.get_autopilot());
+
 	/* note: sys_status plugin required */
 	if (connected)
-		ROS_INFO("CON: Got HEARTBEAT, connected.");
+		ROS_INFO("CON: Got HEARTBEAT, connected. FCU: %s", ap.c_str());
 	else
 		ROS_WARN("CON: Lost connection, HEARTBEAT timed out.");
 }

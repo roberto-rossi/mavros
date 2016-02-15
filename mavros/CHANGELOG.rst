@@ -2,6 +2,32 @@
 Changelog for package mavros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.17.0 (2016-02-09)
+-------------------
+* update README
+* rebased with master
+* Fixed ROS_BREAK
+* Updates for ROS_BREAK and code style
+* Nitpicks and uncrustify
+* Updated frame transformations and added odom publisher to local position plugin
+* Contributors: Eddy, Vladimir Ermakov, francois
+
+0.16.6 (2016-02-04)
+-------------------
+* node fix `#494 <https://github.com/mavlink/mavros/issues/494>`_: Report FCU firmware type in rosonsole log
+* scripts fix `#478 <https://github.com/mavlink/mavros/issues/478>`_: Remove guided_enable garbage.
+  I'm missed this when do `#407 <https://github.com/mavlink/mavros/issues/407>`_.
+* Contributors: Vladimir Ermakov
+
+0.16.5 (2016-01-11)
+-------------------
+* scripts: mavwp `#465 <https://github.com/mavlink/mavros/issues/465>`_: Remove WaypointGOTO from scrips and python library
+* node: Report mavlink package version
+* lib: Add APM:Plane QuadPlane modes.
+  Sync with: https://github.com/mavlink/mavlink/commit/1fc4aef08a54130f297943c246f95b8c7e37b1bf
+* readme: pixhawk dialect removed.
+* Contributors: Vladimir Ermakov
+
 0.16.4 (2015-12-14)
 -------------------
 * scripts: checkid: be always verbose, add --follow

@@ -2,6 +2,17 @@
 Changelog for package libmavconn
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.17.0 (2016-02-09)
+-------------------
+* rebased with master
+* Contributors: francois
+
+0.16.6 (2016-02-04)
+-------------------
+
+0.16.5 (2016-01-11)
+-------------------
+
 0.16.4 (2015-12-14)
 -------------------
 * libmavconn `#452 <https://github.com/mavlink/mavros/issues/452>`_: remove pixhawk, add paparazzi dialects.
