@@ -65,5 +65,36 @@
 	<class name="altitude" type="mavplugin::AltitudePlugin" base_class_type="mavplugin::MavRosPlugin">
 		<description>Publish altitude values</description>
 	</class>
+        <!--MODIFICA-->
+        <class name="B_matrix" type="mavplugin::B_matrixPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish B matrix</description>
+        </class>
+        <class name="Bb_tb_i_matrix" type="mavplugin::Bb_tb_i_matrixPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish Bb_tb_i matrix</description>
+        </class>
+        <class name="Bb_tb_i_pinv_matrix" type="mavplugin::Bb_tb_i_pinv_matrixPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish Bb_tb_i_pinv matrix</description>
+        </class>
+        <class name="T_bw_matrix" type="mavplugin::T_bw_matrixPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish T_bw matrix</description>
+        </class>
+        <class name="g_matrix" type="mavplugin::g_matrixPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish g matrix</description>
+        </class>
+        <class name="csi_r" type="mavplugin::csi_rPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish csi_r</description>
+        </class>
+        <class name="csi_dot_r" type="mavplugin::csi_dot_rPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish csi_dot_r</description>
+        </class>
+        <class name="csi" type="mavplugin::csiPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish csi</description>
+        </class>
+        <class name="csi_dot" type="mavplugin::csi_dotPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish csi_dot</description>
+        </class>
+        <class name="polimi_attitude_ned" type="mavplugin::polimi_attitude_nedPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish polimi_attitude_ned</description>
+        </class>
 </library>
 
