@@ -72,6 +72,9 @@
         <class name="Bb_tb_i_matrix" type="mavplugin::Bb_tb_i_matrixPlugin" base_class_type="mavplugin::MavRosPlugin">
                 <description>Publish Bb_tb_i matrix</description>
         </class>
+        <class name="Bt_tb_i_matrix" type="mavplugin::Bt_tb_i_matrixPlugin" base_class_type="mavplugin::MavRosPlugin">
+                <description>Publish Bt_tb_i matrix</description>
+        </class>
         <class name="Bb_tb_i_pinv_matrix" type="mavplugin::Bb_tb_i_pinv_matrixPlugin" base_class_type="mavplugin::MavRosPlugin">
                 <description>Publish Bb_tb_i_pinv matrix</description>
         </class>

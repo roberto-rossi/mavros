@@ -115,6 +115,7 @@ add_library(mavros_plugins
 ##MODIFICA
   src/plugins/B_matrix.cpp
   src/plugins/Bb_tb_i_matrix.cpp
+  src/plugins/Bt_tb_i_matrix.cpp
   src/plugins/Bb_tb_i_pinv_matrix.cpp
   src/plugins/T_bw_matrix.cpp
   src/plugins/g_matrix.cpp
