@@ -39,9 +39,9 @@ private:
     ros::Subscriber Bt_tb_i_sub;
 
 	/* -*- low-level send functions -*- */
-    void Bt_tb_i_override(const boost::array<float_t, 48> &value) {
+    void Bt_tb_i_override(const boost::array<float_t, 16> &value) {
         mavlink_message_t msg;
-        float value1 [48];
+        float value1 [16];
         std::copy(value.begin(),value.end(),value1);
         mavlink_msg_bt_tb_i_matrix_pack_chan(UAS_PACK_CHAN(uas), &msg, 0, value1);
 		UAS_FCU(uas)->send_message(&msg);
